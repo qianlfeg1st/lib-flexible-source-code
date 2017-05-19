@@ -1,4 +1,4 @@
-# lib-flexible-source-code
+# lib-flexible源码分析
 
 1.用ES6重写了手淘的lib-flexible
 
