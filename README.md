@@ -7,12 +7,6 @@
 例如:
    【1】没有在当前作用域顶部声明变量，而是直接在判断语句中声明变量并赋值;
    【2】isAndroid 这个变量声明并赋值了，但是从未使用过....不知道作者怎么想的
-           if (docEl.firstElementChild) {
-            docEl.firstElementChild.appendChild(metaEl);
-        } else {
-            var wrap = doc.createElement('div');
-            wrap.appendChild(metaEl);
-            doc.write(wrap.innerHTML);
-        }
+   【3】等等，总之就是各种不合理不合逻辑
 
 3.删除了源码中，通过'meta[name="flexible"]'手动设置缩放币的功能(个人认为这个很鸡肋)
