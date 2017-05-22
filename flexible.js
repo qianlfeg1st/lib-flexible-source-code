@@ -18,7 +18,7 @@
       // 将flexible对象暴露给全局作用域，这样一来我们就可以在外部调用内部的一些方法和变量
       flexible = lib.flexible || ( lib.flexible = {} ),
       // 文档宽度
-      width = docEl.getBoundingClientRect().width,
+      width,
       // 缩放比例
       scale = 0,
       // DPR
@@ -29,6 +29,8 @@
       rem;
 
   function refreshRem() {
+    // 获取文档宽度
+    width = docEl.getBoundingClientRect().width;
     // width / dpr的到 'CSS像素'
     // '普通屏幕'一个CSS像素 => 一个物理像素
     // '视网膜屏'一个CSS像素 => 四个物理像素
